@@ -41,7 +41,7 @@ window.SearchInfo = (() ->
         obj.db = TAFFY()
         obj.db.settings(settings)
         updateFunction() if updateFunction?
-      else if changes.queries.newValue.updateid != updateID
+      else if changes.queries.newValue.updateId != updateID
         obj.db = TAFFY(changes.queries.newValue.db, false)
         obj.db.settings(settings)
         updateFunction() if updateFunction?
@@ -81,7 +81,7 @@ window.PageInfo = (() ->
         obj.db = TAFFY()
         obj.db.settings(settings)
         updateFunction() if updateFunction?
-      else if changes.pages.newValue.updateid != updateID
+      else if changes.pages.newValue.updateId != updateID
         obj.db = TAFFY(changes.pages.newValue.db, false)
         obj.db.settings(settings)
         updateFunction() if updateFunction?
@@ -123,7 +123,7 @@ window.PageEvents = (() ->
         obj.db = TAFFY()
         obj.db.settings(settings)
         updateFunction() if updateFunction?
-      else if changes.page_events.newValue.updateid != updateID
+      else if changes.page_events.newValue.updateId != updateID
         obj.db = TAFFY(changes.page_events.newValue.db, false)
         obj.db.settings(settings)
         updateFunction() if updateFunction?
